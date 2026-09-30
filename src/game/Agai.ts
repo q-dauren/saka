@@ -33,8 +33,8 @@ export class Agai {
     this.rng = mulberry32(seed * 7919 + 13);
     this.dir = this.rng() < 0.5 ? 1 : -1;
     this.body = scene.matter.add.circle(120, 700, 28, {
-      frictionAir: 0, friction: 0, restitution: 0.6, density: 0.2, inertia: Infinity, label: 'agai',
-    }) as MatterJS.BodyType;
+  frictionAir: 0, friction: 0, restitution: 0.6, density: 0.2, inertia: Infinity, label: 'agai',
+} as any) as MatterJS.BodyType;
 
     const g = scene.add.graphics();
     g.fillStyle(T.black, 0.3).fillEllipse(3, 6, 60, 36);
