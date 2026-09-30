@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#190406" />
+  <title>Сақа — асық ату</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #190406; touch-action: none;
+      overscroll-behavior: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+      -webkit-tap-highlight-color: transparent; }
+    #game { position: fixed; inset: 0; touch-action: none; }
+    #game canvas { display: block; touch-action: none; }
+    #ui-root { position: fixed; inset: 0; pointer-events: none; z-index: 10;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="ui-root"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
